@@ -466,7 +466,7 @@ const Home = () => {
                 <div className="px-4 sm:px-6 lg:px-8 py-24 pb-96 space-y-20 relative z-10">{/* Added substantial bottom padding to prevent hero visibility */}
 
                     {/* Fixed Header with Search - Always Visible */}
-                    <div className="flex items-center justify-between mb-8">
+                    <div className="flex flex-col md:flex-row gap-5 items-center justify-between mb-8">
                         <div className="flex items-center">
                             <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl mr-4">
                                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -507,24 +507,8 @@ const Home = () => {
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
                                     placeholder="Search PDFs..."
-                                    className="w-64 pl-10 pr-12 py-2 text-black border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                                    className="w-64 pl-2 pr-12 py-2 text-black border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                                 />
-                                <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                </svg>
-                                {/* Scroll to results button */}
-                                <button
-                                    onClick={() => {
-                                        console.log('Button clicked!'); // Debug
-                                        scrollToResults();
-                                    }}
-                                    className="absolute right-2 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition-colors"
-                                    title="Scroll to results"
-                                >
-                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                                    </svg>
-                                </button>
                             </div>
                             {searchTerm && (
                                 <button
@@ -536,7 +520,7 @@ const Home = () => {
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                     </svg>
-                                    Clear Search
+                                    Clear 
                                 </button>
                             )}
                             {activeCategory !== 'All' && (
