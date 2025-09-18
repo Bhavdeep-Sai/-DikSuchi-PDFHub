@@ -1,7 +1,7 @@
 // src/api/pdfApi.js
 import axios from 'axios';
 
-const API_BASE = 'https://diksushi-pdfhub.onrender.com/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://diksushi-pdfhub.onrender.com/api';
 
 // ====================== Public PDF APIs ======================
 
