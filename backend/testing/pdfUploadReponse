@@ -1,0 +1,19 @@
+{
+    "success": true,
+    "pdf": {
+        "title": "Testing pdf",
+        "description": "A pdf on testing only",
+        "category": "adminPDF",
+        "tags": [
+            "admin",
+            "pdfhub"
+        ],
+        "fileUrl": "https://res.cloudinary.com/djheuujcg/raw/upload/v1757653202/ufow4tqpjmzlfvhpz7iv",
+        "isTrending": false,
+        "ratings": [],
+        "_id": "68c3a8d18eb838f824620856",
+        "uploadedAt": "2025-09-12T05:00:01.589Z",
+        "reviews": [],
+        "__v": 0
+    }
+}
